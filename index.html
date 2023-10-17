@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="iNbfNPhlFAAOh3yrj3K_fqis1Ru4FPh2WfQVtEiH7yk">
+    <meta name="description" content="Max Gamesの公式ホームページです。">
+    <meta name="keywords" content="max, マックス, maxgames, マックスゲームズ, happy, major, ハッピー, メジャー">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="aos.css">
+    <script src="aos.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.ripples.min.js"></script>
+    <title>Max Games Official</title>
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 5;
+        }
+        nav {
+            display: none;
+            text-align: center;
+            background-color: #444;
+            padding: 10px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+            display: block;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            min-height: calc(100% - 100px);
+            background-color: #555;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+        }
+        h2 {
+            font-size: 35px;
+            text-align: center;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            background-color: #eee;
+            left: 0;
+            right: 0;
+        }
+        .mokuji {
+            border-style: solid;
+            border-color: #000;
+            background-color: #555;
+        }
+        .happy {
+            border-left: 20px solid #0366d6;
+            border-right: 2px solid #0366d6;
+            border-top: 2px solid #0366d6;
+            border-bottom: 2px solid #0366d6;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #999;
+        }
+        .major {
+            border-left: 20px solid #28a745;
+            border-right: 2px solid #28a745;
+            border-top: 2px solid #28a745;
+            border-bottom: 2px solid #28a745;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #999;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            color: #fff;
+        }
+        li {
+            color: #fff;
+        }
+        .urlcopy {
+            background-color: #000;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .urlcopy:hover {
+            background-color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="menu-icon" onclick="toggleNav()" data-aos="fade-right">
+            <span id="menu-icon-open">&#9776;</span>
+            <span id="menu-icon-close" style="display: none;">&times;</span>
+            </span>
+
+        <nav id="myNav">
+            <a class="animate__animated animate__fadeInUp" href="#aboutus">ABOUT US</a>
+            <hr>
+            <a class="animate__animated animate__fadeInUp" href="#member">MEMBER</a>
+            <hr>
+            <a class="animate__animated animate__fadeInDown" href="#gaibu">外部リンク</a>
+            <hr>
+            <a class="animate__animated animate__fadeInDown" href="https://max-major.pages.dev/">第二ホーム</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <img src="max.png" width="300px" class="animate__animated animate__flip">
+            <h2>Welcome to here.</h2>
+            <button class="urlcopy" onclick="copyUrl()">URLをコピー</button>
+            <p>
+                Max Gamesへようこそ！
+                <br>
+                ここはMax Gamesのホームページです。
+                <br>
+                っていうかMax Gamesって何？
+                <br>
+                そう思う人もいるですよね。
+                <br>
+                3本線のところ押して確認して
+                <br>
+                メンバーとか確認してください.
+            </p>
+            <hr>
+            <hr>
+            <div class="mokuji" data-aos="fade-up">
+                <p>
+                    <strong>目次</strong>
+                    <br><br>
+                    <ul>
+                        <li>ABOUT US</li>
+                        <li>MEMBER</li>
+                    </ul>
+                </p>
+            </div>
+            <hr>
+            <hr>
+            <div id="aboutus" data-aos="zoom-in">
+                <h2>ABOUT US</h2>
+                <p>
+                    私たちはMax Gamesです。
+                    <br>
+                    Robloxの実況してる<a href="https://www.youtube.com/@MaxGames-jj2wn">YouTuber</a>です。
+                    <br>
+                    なので、チャンネル登録
+                    <br>
+                    お願いします.
+                    <br>
+                    <br>
+                    メンバーはHappy【リーダー】と…
+                    <br>
+                    あとMajorです.
+                    <br>
+                    ↓メンバー
+                </p>
+            </div>
+            <hr>
+            <hr>
+            <div id="member" data-aos="flip-up">
+                <h2>MEMBER</h2>
+                <div class="happy" data-aos="fade-right">
+                    <p>
+                        <strong>Happy</strong>
+                    </p>
+                    <img src="max.jpeg" width="50px">
+                    <p data-aos="flip-up">
+                        こんにちは、Happyと申します。
+                        <br>
+                        Robloxの実況やってます.
+                        <br>
+                        相方のMajorもRobloxを
+                        <br>
+                        実況しているので、
+                        <br>
+                        ご覧いただければ幸いです.
+                        <br>
+                        チャンネル登録お願いします.
+                    </p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="major" data-aos="fade-left">
+                    <p>
+                        <strong>Major</strong>
+                    </p>
+                    <img src="major.jpeg" width="50px">
+                    <p data-aos="flip-up">
+                        Majorと申します。
+                        <br>
+                        このサイトの著者でもあります.
+                        <br>
+                        ずっとRobloxやって<s>て
+                        <br>
+                       ニヤけてます😁</s>ます.
+                        <br>
+                        もちろんRobloxの実況やってます.
+                        <br>
+                        最近は<a class="https://scratch.mit.edu/">Scratch</a>もやってます.
+                        <br>
+                        チャンネル登録お願いします.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <hr>
+            <br>
+            <div id="gaibu">
+                <h2 data-aos="fade-right">外部リンク</h2>
+                <ul>
+                    <li data-aos="fade-right">
+                        <a href="https://norimaaki.github.io/oshirase/">お知らせ</a>
+                    </li>
+                    <li data-aos="fade-right">
+                        <a href="https://line.me/ti/g2/T4FwqMo9NdLCf4IT-grFt8HIyqtGtayZnGDy3w?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"> LINEオープンチャット</a>
+                    </li>
+                    <li data-aos="fade-right">
+                        <a href="https://max-major.pages.dev/">第二ホーム</a>
+                    </li>
+                    <li data-aos="fade-right">
+                        <a href="https://chch.norimaaki.repl.co/">Chatroom</a>
+                    </li>
+                    <li data-aos="fade-right">
+                        <a href="https://www.youtube.com/@MaxGames-jj2wn">YouTubeチャンネル</a>
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <footer data-aos="fade-left">
+        Copyright&copy; Max Games
+    </footer>
+    <script>
+function toggleNav() {
+    var nav = document.getElementById("myNav");
+    var iconOpen = document.getElementById("menu-icon-open");
+    var iconClose = document.getElementById("menu-icon-close");
+
+    if (nav.style.display === "block") {
+        nav.style.display = "none";
+        iconOpen.style.display = "block";
+        iconClose.style.display = "none";
+    } else {
+        nav.style.display = "block";
+        iconOpen.style.display = "none";
+        iconClose.style.display = "block";
+    }
+}
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.container').ripples({
+                resolution: 1000, // 解像度
+                dropRadius: 10, // 波紋半径
+                perturbance: 0.04, // 揺度合
+            });
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function copyUrl() {
+            const element = document.createElement('input');
+            element.value = location.href;
+            document.body.appendChild(element);
+            element.select();
+            document.execCommand('copy');
+            document.body.removeChild(element);
+        }
+    </script>
+</body>
+</html>
